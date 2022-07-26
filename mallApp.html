@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!--  -->
+  <div class="container">
+
+    <div class="row">
+      <div class="d-none d-lg-block col-lg-3">
+        <p>telephone: +254701218138</p>
+      </div>
+      <div class="d-none d-xl-block col-xl-3 col-xxl-3">
+        <p color="blue"><b>welcome to kincaid store</b></p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>US</option>
+          <option value="1">UK</option>
+          <option value="1">CH</option>
+
+        </select>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>&#1423;</option>
+          <option value="1">&#36;</option>
+          <option value="2">&#8364;</option>
+        </select>
+      </div>
+      <div class="d-none d-md-block col-md 4 col-lg-3 col-xl-2">
+        <button type="button" class="btn btn-info">
+          Notifications <span class="badge text-bg-secondary">4</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row text-bg-dark">
+      <div class="col-6 col-md-3 col-lg-5 col-xl-6">
+        <a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhATFRAVEBUQFhUQFhUQFxIRFRIWGBYRFRUYHSggGBwnHhcVITMhJSkrMC4uGR8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtKy0rLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAH0BkgMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAABgEDBAUHAv/EAEkQAAECAgQJCgMFBQYHAAAAAAEAAgMRBBITIQUGMUFRU5Gh0RQVIlJhcYGSotIWMrEHQlRywSNisuHwM2SCk6PiJDRDc4PC8f/EABoBAQACAwEAAAAAAAAAAAAAAAABBAIDBQb/xAAzEQABAwEEBgkFAQEBAAAAAAABAAIDEQQSIVEVMVJhkaETFCJBcYGi0dIFMsHh8LHxQv/aAAwDAQACEQMRAD8A7iiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiKxSKQ1gm4+Gc9ygkAVKkAnAK+i0kfCjj8vRG0rCjUvO992lxkN6putzBqx5Ky2yvOvBSauNKpXGkblEDhaDr4XnZxTneBr4XnZxWvSAy5rZ1J2Z4FS+sNI3JXGkKJc6QdfC/zG8V551ga+F528U0gMuadSdv4FS+uNI3JXGkbQohztA18Lzt4pzrB18Lzt4ppBuXNOpO/gVL7QaRtCWg0jaFEOdIOuhedvFOc4OuhedvFRpFuQ4p1J38CpfaDSNoVa40hQ/nODroXnbxTnOFrofnbxU6QbkOKdSdv4FTCuNIVK40jaFD+coOuh+ZvFOcoOth+dvFNIDIcU6k7PkVMLQaRtCVxpG0KIc4Q9bD87eKpzjD1sPzN4ppBuXNOou38CphaDSNoS0GkbQofzhC1sPzN4pzhC1rPM3inX25DinUXb+BUwtBpG0JaDSNoUO5wh61nmbxTl8Lrs8zeKkW8ZDinUXb+BUxrjSNoSuNI2hQ7lzOuzzN4py6H12eZvFOvDLmnUXZ8ipjaDSNoS0GkbQoby5nXZ5mpy5nXZ5mqevjIcU6i7+BUytBpG0JaDSNoUN5czrs8zVTl0PrM8wTrzchxTqLs+RUztBpG0JaDSNoUM5azrM8zU5azrM8wTrzchxTqLs+RUztBpG0JaDSNoUL5YzrM8wTljOs3zBOvN3cU6i7+BU0tBpG0JaDSNoUL5azrt2hU5YzrN2hOvN3cU6i7+BU0tBpG0KtoNI2hQrlbNLdoVOWM0t2hOvNyHFOouz5FTa0GkbQloNI2hQnlTdLdoVOVN0t2hT15u7j+lPUXZ8ipvaDSNoVLQaRtChPKhpbtCpyoaW7QnXW5KOouz5FTe0bpG1LQaRtChHKhpbtCpylukbQp663JOouz5FTxFBYdLIva6X5TL6LOo2HYjfmNcdtx2rNtrYdfutbrI8avZSxFhUDCLIo6J6QytNxHFZqsggioVYgg0KIiKVCIiIiIi8OdITOREWLT6YITZm8m4DSeCjNMp+WJEeABlJyAaAvOEadaPLvu5B2Af1NRZzjTIspkUeGc11c/z3DvXnbVbOlcQ37Rz3/3cu5ZLHcbV2vv3bllvwrSKQS2jtqQwZGI/L4aPCZ7l6hYusJrRor4js8zIbbzvWwhSaA1oAaBIAXABe7RUr4OtXKkYMw/3jrWLzDRtWfO/wBycw0bVnzv9yyTES0S+1R28zxWNzHRtX63+5OZaNq/W/3LItEtEvtTt5nirHMtH1fqf7k5lo+r9T+KvWiWii81O3meKs8z0fV+p/FOaKPq/U/ir1olopvNyCnt5nirPNNH6h8z+Kc1UfqHzP4q7aJaJeZkFHbzPFWuaoHUPmfxTmuB1PU/irloqWqVZkFNX5nivHNkDqHzP4pzZA6nqdxXoxVQxFIuZBKvzPFeebYPU9TuKrzfB6nqdxS0VLROxkE7eZ4qvN8Hqep3FU5vg9T1O4qlqlqp7GQ4J28zxVeQwep6ncU5DC6vqdxXm1S1SkeyOCVfmeKryKF1fU7inJIXV3u4rxapapSPZHBKvzPFe+SwurvdxTkkLq73cVbMVUtVN2PZHBKvzPFXOSw+rvdxTk0Pq73cVatUMVLseyOCjt5nirvJ4fV3u4rzYQ+rvPFWrVUtVNyPZHBTV+Z4q9YM6u88UsWdXeeKs2q8mKlyPZHBO3mVkWTNG8pZs0bysa2S1U3ItkcAnbzPFZNmzRvK81G6N5WNapbJci2RwCdvMrJqt0byqVW6N5WKYqGKp6OLZbwHsnbzKypN0byvUSFVlWaRNocJzvachXuFRWBrYkaLUDhWaxgrvc3raGg3yJWPhGniI4FoqsaxsNgN5DW6TpylbDBCG1c1vhQc8MlrD3l1ATTv1/xxyqhlmuXtsYjPNYNulstZiaMY+yd35GpbcTg7Hx99a2MOllpDmuIcDMEZlM8A4YEdtUyEVovGkdYLnzIla7PmXqhYQdBiNiN+ZpyaRnae9WrLbCx1HefuFVtNjEjcNfd7LrCKxRKQ2IxsRvyuaHDuKvrvrgIiIiItVjFSKkB2lxDNuXcCtqozjrEIZDGl5OwfzVS3yGOzPcMv9oPyrNkZfnY3f+1DsOUothEDK41B45d01ewfAEKG1mcCZ7XHKtXhYziQW5q897Vs65XjjJRgXqLlQsmuldY1oq11j0iXFusBUdkaIWPn8sxIyyET+qx8JwLKK6GJyBEp6CAV4wDSKlIhnMXVD3OEv1C3mGaHWpkG658if/GZndJdONjZrJVo7QeBXc79lc97jFae0eyWk08P0Fedi/DEMnpWlSeW6vV0d60GB4AixWsM6pmTK4yA/wDilradOkugZhBD/wDFWv3ELVYvUOrSY/7hqjuc6Y3BX57LE6aIRjC8Wnyxx4FU4p5GxSXzjdDh54f6QrTsGwuUiAJ1alY33zkTwWXGwVRGmq6IGnQ6I1p2FYGC6RXp7nZiYgHc0SH0WbhjAL40UxBEa0EASIM7kiaHxufHEHG+QBu1KZCWyNZJIWi6DXerVKoFEDHFsVpcGkgWjTMgXXZ1jYvYNhx2vL63RcAJGWULGwhi6+FDdFMRpDROQBvmQP1WzxIPQifnb/CtcTb9qYyWINwOGuuH4otkjgLO58chdiMcl7ODaFktgDOX9qzKsHDOBhCZaw3FzJic5EieQgjKFWJirELibSHIkn7xuJ7lkYwRLCitgdJxIaytIgANM8uSd2RZSR1ieZYQygwIz8li2SkjBFKXVOIUZtFnYHoBpD6oMmgVnHLIZgO3+a1NZbzFPCDIUVzXkAPAaCcgc0mQJ7ZlcuyXHTNEn2k/3P2710bVebE4x6wP7kts7B9CabN0QV8l8SRB7ZXArWYewPYAPa4mGTK/K05rxlC2OEsVWvcXw4haXEuLXCsJkzMiLxvWmw06lw2iFGdOFcGloaQauTpSBndnXStTbjHdJDTZc3HjiOYXPszr723Ja5h341rPwZgqHEozozq1cB+QyHRnK5R4xFMMWWV6EWg3utG39swtV8HxtbD9XBa5rLJJDE6FlezjTPBbYrSxkkjZXf8ArCvmrmGsFw4UBkVtas4tBmZi9pJWFgPBTqQSSasNpkXDKT1WrdY3tq0VjdD2DYxy9MfYYOrtMnGEHTGZ0Qi/wrblvfZ4+smoo1rA4gd/9+FpZPJ1cXTVznXQSvL8GUFpqOiAOydKLIg6JTkFrMO4DMAWjHF0LPPK2eQ3ZR2qMmIp1iq+3ohY+8Avg339EtBGytLwWuB8VrJjuBppUEflbZ2S2VokvlwriD+Mlq8WcGQ6QHmJW6JbKqZZZ8Fshgigk1RHFacpCKyc9EtKx/s/d0Yv5mfRy00TF2lPe6ULol5vc9kpEm8ydOXgso6CzRubFeLq1wOe4FRJU2iRplugUpju8ll4fwJyeT2vnCJkS+QLDmmRlB7lnYNwPR3QGxYjiJtm51aq0XkTMxcsjGh1nRWw3Gs+bAM5JaBN8s+TelGhviYPDGgue6EQAbiTMzF+TxVkWeJs7mhtezWm9V+nldA03qdqlcxmqQ8A0N82w403Sn0IjHnvlIqO4Qwc6BHbBcZtc5snC6swul4HKsvAOL9JbHhxHsqNY6sSXNJN3ygNJyq/jhSWmlQGA9JpbW7K0QSG5V5GNfB0hjuG8B41I7sPBWI3ls/RtkvggnwoD354K1jVgqHRmsMOt0i4GsZ5AJLOiYtMdRxEh1rYwmvAJmCS0Etl23rz9opkyF+d/wBAt3ApjYUCjl+R4hQ56C6HcT4gDxVkQRdYkaQKADyqq7pZhBE5pNSXedD3rntBAfFYw5HRGsOYyLgCtnjVg+HRnsbDrSc0k1jO8EBZeG8F2NNgxWj9nFjsP5YlcVh45dqp9oQnGgN0scNrgFSdB0cMgcO0HAA/2autm6SaMtPZIJI/slbwBi6Y7bWK4thfdDbnPAyumcg+q2kPBOD3mzbEaYmQVYoJJ7BORPgvOPMYwaKyEy5rnCGZXfs2tJq7hvUKoGD48YF0GG54aQCWkCq7KMpy5CtshZZ3CJsd40qcz4LTE187DM6QsFTTLz81tsY8DuorgQ6tDdMNccoI+66WfP23rSmKtxh+NhB0OdJYRBa5p+WGBWyAzF8796jZiKlaC0SG6CBkRT+GSv2YOMYvEE5g1H/VmGKpLgPFZ0ZgixXljHCbWtArOGkzuaPA+Ci2DqrosMP+QxG1riejWE7h2Lr9GpUOK2cOIx7ZSmxwcBsVv6fCyYkv7u5VPqM74QGswr35KMxMX20lpc2KWvhl1Hbkc2rCJa2sMsyJTkfBQ7CVGfAiGFEEnDxBGZwOcLpGAgZOcQGhobR5T+9Bm1zu6eTuUX+0SkwXiGWRGuiMc5jqhrSaROTiLgZjJ2lWLXAzouk1H/eO5aLHPJ03RHEf55+KitqqGKsIxUMVci+u1cWc2PIzGUK9T3fK8ZHCfitQYpWdHeTR2HOHy/i/ksHO7TXeSm5guhfZ5Tq8F8Im+G+78rxP6hylq5r9lkU2sZumG0+V3+4rpS9NYnl0DSfDgV5i3x3LQ4DceIRERW1TRRzHSHOEx2iJLa08FI1rsNUa1gvYMspjvbeBukq1siMsD2DWRz1jmt9mkEczXHUCuU4YuMJ+Zr79x/QrZqxhCBaQy3PlHeFZwVSa7JH5m9E+GQrxH3Rgju/OpevWaiItaI1xBBGUGY7wukw2tiWcbOGEjueBwXNSt/RcZTDhCFZTLWVQ6vLuMqubvzLr/SrXFAXCU4GlMCcR4D+ouZ9Ssz5Q0xjEVyGB8Vbo1O/460zGMWf4T0B+hUrpDBCbGjZy2ue9rJD6Bc4F3f8ArpW9wnjIY0IwrKrWkC6tPIQTdVGhbbB9QZGyTpDiSXDA6yDXUP8Ac1ha7E572XBgAGnEagRRWsUf+Zb+V/8ACsjGaNFbHIY+KG1G3Mc8DJ2LVYJp9hFEWrWkDdOrlEssit98Z/3f/U/2LXZ5YOqdDJIWm9XAE9273WyaOXrPSsZeF2msDv3qPRY1IcJOdFLc4LnkeIKkuI3yRPzt/hVmJjhMEcnygj+00j8i1eAsOcma5tnXrEH5qspCWgrOzzWeC0tk6QuFDUkOwyzJ/CxmZPNA5hjAOFMRjjjkFbpFNpNdwEWNKsZSMTSe1SWAXvoRtwaxhvPSuMhOoT23BYZx1/u/+p/sWswrjDEjipVDGmUw0lxd2Tl45FshtFnhvOEpfUEUIIGPitc0M810GMNoa1qCeS0pz92a/wC83OtzgHA7KRXrRHNLXZGgXgzkb+4hacDLsPYJg7VkYPpz4L7RhvneDeC0zMiudZzGHt6UVHeFetAeWO6M0PcVf5RSKM+za57CDKreWnLe1puIl2KTYXc59BLowk+o1xEpEPrCV2Y9nasRuOQIE4BB7H3ZO65ajDOHHx+iQGMBnVvJnpJlf2ZF02TWeGN4ZIX1FA2hAHHDhTwVB0U00jL8YaRiTUVPhTHjXyUgxfcW0F0jeLa/IQRO8KJnCseX9vG/zXzG9Z9Aw9ZQDR7IOmHydXl8/YW/qtLV/UX5RMFV7TOHRxNjOptDSoy8KqxZ4S2SRzxrNRqOfjRTXGwzocMk/ehknL9wr1g8cpoVkDJwbZyJyOZe2Z8GqP4Ww7bQBAsqtUMNatWnJoEpVR9ViYMwnEgPc5hmCTNpmQ7pjf2q262xC0V1tc0NOB35jH9qs2ySGCmpwcXDEfhYsaiva6o5jg/JVkSZ6JZ+wi45lOcDQTRKG50S53SikaCQA1vfc1YAx0BF8AzmBc8S+9+72LRYZw5FpEgeiy8tYyZvkWzcTlWETrNZiZI3lzqUGFKeOrHwp4LORtotIEcjbra1OIPCn9vW9+z8dGLdnZ25itZHxppTXOAewAPc0dETul39is4Aw/yWuBCr1i2+tUlVEtBmtRGdWJdkm4u0/NKY7xJaja7tnZHE4gitaVHgtjbLene+RooaU1HxV2nU2JGeHxHlzsk8gAnkaJABTag0t0PBwiskHNhTBPSl0jl051Agbx37L7gtwMYP+E5JZf8ATLa9bvPy1f1U2OcRue55xIOOJx581Nss5e1jWDAHEYDDlySNjXSiP7QNu+61kwPEHctbRXF0ZjnElxjNJJNYl1YfNpKxXZXd36hXID6rw7REa6WmT5yVczPe5pkcTirAiZGDcAGHdgpj9oomyD+Z+TPMC5VxnvwfCvzQj/pFaDGDD/KwwWVSoSbnV6wc2R+6FXCmMFtR20ezAqVOlWJnVFX5ao06V0JbTE50xB+5oA140CoxWeVrYQR9riTu71KcXKa2l0drYl8WE9hOmbCHMieMpHxWn+0cyiwSMoY4jvrBR7AmFHUWKIrRWEi1zJym03i++WY5Ffxkw5ytzHWdSo0tlWrzmZ6BJYSWxr7Lcd9+HnQ61lFZHR2u+0djHyqNSl+MtHNMojIsEVnCrGa0ZSJEOZ33m7S1RHAeF6VR60GBDBc58y0sc91aUpSBuyLxgPGKLRZhsnQyZljpgT0tI+U7e5SJ32giV1HNbtiCW2r+iyM8MzhKXljqUOBPCihsM0LTEIw9lajEflZ+ODnnB03iUQ2JeBmfWbWG2a5mtzhvGKPSrnkNhzmGMmBPMXE3uO7sWmKrW6ds0t5uoCmKt2CB8MV19Kk1w7lscWv+bgf95n8a6rScFQIhrRIENz+sWNLvNlXHaFSDDiMijKx7XDtquBluXZsH01kaG2LDM2OEx2aQdBGhdD6UWljmHOvKi5/1cOa5jxlSoWMMX6L+Hhm+fSbXE9MnTUc+0mE1tGhNa0NaI1waAAP2bswU3XN/tIws2I5lHYQbMkvIzPIkG94E596uW24yB3dXDUqlgvyWhtSTTFQpUKKpXml6heVsaZ0aPDbnJrfU/wDsFi0OjmI4NzZT2DOrmFYwc+Q+VoqiW/8ArsWJxcB5qFLvsqg9OO/MGMZ4kuJ+gXRgov8AZ9g8wqI1xHSiuMX/AAkAM3AHxUpXqrGwshaD48TVeUt0gktDnDw4CiIiK0qiIiIiguM+DDCiWjR+zeZ/lfn4qJ02juY62h5fvN0jTJdfpNHbEaWPE2kSIUFwzgV8EzvdCzOGbsdoK8v9RsLoXmaMVadYyz8jr3cF6H6fbg9ojf8AcNW/97lpKJS2xBMG/ODlCyFhUnBzXGs01H5Zt06ZcFanSGXSa8b/ANFyC1p+0+R99S6q2JVCsDlkXUHfwTlkXUHfwUdGd3EIs9UWFyuJqTv4JyuJqTv4J0Z3cQizEWHyqJqjv4KvKYmqO/glw/xCLLVFiCkv1R38FXlD9Wd/BTcKLJXlY9u/VnfwVbd+rP8AXgoulFkFUWPbO6hS1d1FNClFeSZ0nwKtWruoqWjuqpAKEVVwovFc9VUrHQlClF6KLzWOhVn2KcUon9fyXkqqIlF4VJr3LtVKo0qaovCoSrlUaUqDrIitzXmavWbeslm3rqaosdHOOk7Vesm9f6JYt64U3gisFUWRYs643cUsGawbkvBFiFeVmcnZrBu4qnJmawbuKm8EWIqFZho0PWjdxVOSw9aN3FTfH8CpqsJZmDsLR6OZwYrmTyi4td3tMx4pyWHrhu4qnJIeuG7ismy3TUEg+axc1rhRwqN6zqZjbS4japjVQRI2bQwkfmF48JLRFZ/JIWuG7iqcjha8buKzfaC81eSfGqxjjZGKMAHgtcrsCA55k0T+g7ysuzo7crnP7B/LivMbCJlVhtqN7Mv8ljeJ1DitiuR4rYLTDYZxD8ztCvYp4DNLjhpBsWyc8/u5mA6Tk2nMreAcARqW+TBJgPTe4dFun8x7PoutYGwVDosIQoYuF5Jyvdnc46V07BYS83nfb/v6/C5tvtohbcYe0eW9Z0NoAAAkAJADMBmXtEXol5pERERERERF4cAbjkyXr2iIo/T8WYT72Ew3aBe3Zm8CtLSMVo4+Wo8fuukdjpfVTpFzpvpVmlNS2h3YfrkrsX1CeMUrUb8f3zXPzi5StUfND9yp8O0rVHzQ/cugoqugbPtO9PxVjS82y31fJc++HaVqj5ofuVPhylao+aH7l0JE0FZ9p3p+KaXm2W+r5Lnvw7StT6ofuVPhylak+aH7l0NFOgoNp3p+KaXm2W+r5Lnnw3StT6ofuVPhular1Q/cuiImgoNp3p+KaXm2W+r5Lnfw1StV6ofuXn4bpWp9UP3LoyJoODad6fiml5tlvq+S5z8NUvU+uH7lT4bpepPmh+5dHRToOz7TvT8U0vNst9XyXODi3S9T6ofuVPhml6n1w/cukImg4Np3L4ppibZb6vkubfDNL1Prh+5Phml6n1w/cukomhINp3EfFNLzbLfV8lzU4sUvU+uH7lQ4sUvU+uH7l0tFOhINp3EfFNLzbLfV8lzP4Xpep9cP3LycV6ZqfXD9y6ciaFg2ncviml5tlvq+S5j8LUzU+uH7k+FqZqfXD9y6cinQsG07iPZNLzbLfV8ly/4Wpmo9cP3KhxWpmo9cP3LqKJoWDadxHsml5tlvq+S5b8K0zUeuH7lT4Vpmo9cP3LqaJoaDadxHsml5tlvq+S5X8KUzUeuF7k+FKbqPXC9y6oinQ8G07iPZNLzbLfV8lyk4pU3UeuF7lT4Spuo9cL3Lq6JoeDN3L2TS82y31fJco+EabqPXC9y8/CFN/D+uF7l1lFOiIc3cvZNLzbLfV8lyX4Qp34f1wvehxQp34f1wveutIp0RDm7l7JpebZbz+S5H8H078P64XvT4Pp34f1wveuuIp0TDm7iPZNLzbLfV8lyL4Op34f1wveqHE6nfh/XC9668iaJhzdy9lOmJtlvq+S5RRsRaY75msh/neD/BWUhwViDBZJ0d7op6rf2bPG+Z2juU2Rbo/p8DDWlfH21LRL9StDxStPDDnrVmjwGsaGMaGsAkGtAaANAAV5EV1UERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF//9k=" class="w-25 img-fluid"></a>
+      </div>
+      <div class="d-none d-md-block col-md-6 col-lg-4 col-xl-4">
+        <form class="d-flex" role="search">
+          <input class="form-control" style="width: 200px; margin-right: 20px;" type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-info" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-5 col-md-3 col-lg-3 col-xl-2 d-flex">
+        <div class="dropdown me-2">
+          <button class="btn btn-secondary   
+dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">My
+            Account</button>
+
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Login</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Register</a>
+            </li>
+            <li><a class="dropdown-item" href="#">My Account</a></li>
+
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#" role="button" style="height: 37px;"><i class="bi bi-cart3"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-success bg-success">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Computers
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Laptops</a></li>
+                  <li><a class="dropdown-item" href="#">Desktops</a></li>
+                  <li><a class="dropdown-item" href="#">All</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Tablets
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">Iphone</a></li>
+                  <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Mobile Phones
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">Iphone</a></li>
+                  <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  TV
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">LG</a></li>
+                  <li><a class="dropdown-item" href="#">Sony</a></li>
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Headphones & Earbuds
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Headphones</a></li>
+                  <li><a class="dropdown-item" href="#">Earbuds with a cable</a></li>
+                  <li><a class="dropdown-item" href="#">Earpods</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-right: 80px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Accesories
+                </a>
+                <ul class="dropdown-menu dropdown-menu-primary" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Printers</a></li>
+                  <li><a class="dropdown-item" href="#">Scanners</a></li>
+                  <li><a class="dropdown-item" href="#">Audio & Video</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login/Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+
+
+  <div class="container">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      There are new computers in our shop!!!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- </div> -->
+
+    <!--  -->
+
+
+
+    <!-- <div class="container"> -->
+    <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="d-none d-lg-block col-lg-3 text-secondary p-3">
+              <p>Memory is 8GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once.
+                Hard Drive is 256GB PCIe Solid State Drive which allows to fast bootup and data transfer</p>
+
+              <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+
+              <a href="#"><button type="button" class="btn btn-success">View item</button></a>
+
+            </div>
+            <div class="col-3 p-3">
+              <img
+                src="https://notebookmall.am/wp-content/uploads/2021/09/Nitro5_AN515_45_56_57_Standard_02-1-300x300.png"
+                class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="d-none d-lg-block col-lg-3 text-secondary p-3">
+              <p>Get up to 15x faster performance than a traditional hard drive with 256 GB PCIe NVMe M.2 SSD storage
+                and experience improved multitasking with higher bandwidth thanks to 8 GB of RAM</p>
+
+              <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+
+              <a href="#"><button type="button" class="btn btn-success">View item</button></a>
+            </div>
+            <div class="col-3 p-3">
+              <img
+                src="https://static-ecpa.acer.com/media/catalog/product/cache/88522f6c1d6da83084bf78ce2a2121bd/a/c/acer-aspir-3_a317-33_non-fp-non-backlit_silver_modelmain_3.png"
+                class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="col-3"></div>
+          </div>
+          <!-- <img src="https://m.media-amazon.com/images/I/81QpkIctqPL._AC_UL640_FMwebp_QL65_.jpg" class="d-block w-50" alt="...">
+          
+          https://m.media-amazon.com/images/I/71233PTgAjL._AC_SX679_.jpg -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!--  -->
+
+
+    <!-- <div class="container" style="padding-bottom: 2rem;"> -->
+    <div class="row bg-warning">
+      <p class="text-center text-uppercase fs-2">Daily Deals</p>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center">
+        <div class="card" style="width: 12rem;">
+          <img src="https://m.media-amazon.com/images/I/71rXSVqET9L._AC_UL640_FMwebp_QL65_.jpg" class="card-img-top img-fluid"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Desktop</h5>
+            <p class="card-text text-primary display-6 text-center">$650<br><del class="text-danger"
+                style="font-size: 2rem;">$700</del></p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center">
+        <div class="card" style="width: 12rem;">
+          <img src="https://m.media-amazon.com/images/I/71233PTgAjL._AC_UL640_FMwebp_QL65_.jpg" class="card-img-top img-fluid"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Laptop</h5>
+            <p class="card-text text-primary display-6 text-center">$800<br><del class="text-danger"
+                style="font-size: 2rem;">$900</del></p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center">
+        <div class="card" style="width: 12rem;">
+          <img src="https://m.media-amazon.com/images/I/61WjjxkzLFL._AC_SX522_.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Laptop</h5>
+            <p class="card-text text-primary display-6 text-center">$600<br><del class="text-danger"
+                style="font-size: 2rem;">$700</del></p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center">
+        <div class="card" style="width: 12rem;">
+          <img src="https://m.media-amazon.com/images/I/61MGsq1ZVaL._AC_SX522_.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Laptop</h5>
+            <p class="card-text text-primary display-6 text-center">$500<br><del class="text-danger"
+                style="font-size: 2rem;">$550</del></p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center">
+        <div class="card" style="width: 12rem;">
+          <img src="https://m.media-amazon.com/images/I/71Jsnu1EdrL._AC_SX522_.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Laptop</h5>
+            <p class="card-text text-primary display-6 text-center">$600<br><del class="text-danger"
+                style="font-size: 2rem;">$760</del></p>
+
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!--  -->
+
+
+    <!-- <div class="container" style="background-color: gray;"> -->
+    <p class="text-center text-uppercase fs-2">Categories</p>
+
+    <div class="row">
+      <!-- <div class="col"></div> -->
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SX522_.jpg"
+            class="card-img-top d-none d-lg-block w-100 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">Laptops</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/71ZOH88uZlL._AC_SX679_.jpg"
+            class="card-img-top d-none d-lg-block w-100 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">Desktops</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/71GcsLmafcL._AC_SX425_.jpg"
+            class="card-img-top d-none d-lg-block w-100 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">Tablets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/91GRcF718oL._AC_SX679_.jpg"
+            class="card-img-top d-none d-lg-block w-100 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">TVs</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/61S9T9JhDrL._AC_SX425_.jpg"
+            class="card-img-top d-none d-lg-block w-50 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">Headphones and Earphones</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/7120GgUKj3L.__AC_SY445_SX342_QL70_FMwebp_.jpg"
+            class="card-img-top d-none d-lg-block w-50 img-fluid" alt="...">
+          <div class="card-body">
+
+            <a href="#" class="btn btn-outline-success">Earpodes</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col"></div> -->
+    </div>
+
+    <!-- </div> -->
+
+    <!--  -->
+
+    <!-- <div class="container"> -->
+    <div class="row">
+      <p class="text-center text-uppercase fs-2">New Arrivals</p>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/61-fB+GkifL._AC_SY300_SX300_.jpg" class="card-img-top w-50 img-fluid" style="height: 11rem;"
+            alt="...">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81pl3Tc9kTL.__AC_SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top w-50 img-fluid" style="height: 11rem;"
+            alt="...">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51W2KpbkmWL.__AC_SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top w-100 img-fluid" style="height: 11rem;"
+            alt="...">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/71ouXIR8m+L._AC_SX679_.jpg" class="card-img-top w-100 img-fluid"
+            alt="..." style="height: 11rem;">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://m.media-amazon.com/images/I/81bTulSGSCL._AC_SY741_.jpg" class="card-img-top w-50 img-fluid" style="height: 11rem;"
+            alt="...">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 col-xl d-flex justify-content-center text-center">
+        <div class="card" style="width: 10rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71c5rhsUkxL.__AC_SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top w-100 img-fluid" style="height: 11rem;"
+            alt="...">
+          <div class="card-body">
+            
+
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!--  -->
+    <!-- <div class="container"> -->
+    <nav aria-label="...">
+      <ul class="pagination d-flex justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--  -->
+
+
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 border border-secondary">
+        <a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center text-center">Contact us</a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 border border-secondary">
+        <a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center text-center">Live chat</a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 border border-secondary">
+        <a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center text-center">Shipping</a>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 border border-secondary">
+        <a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center text-center">Term & Conditions</a>
+      </div>
+    </div>
+
+    <div class=" row">
+      <div class="d-none d-lg-block col border border-secondary">
+        <div class=""><a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center">Get To Know About Us</a>
+        </div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Careers</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Blog</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">About Web Shopping</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">About us</a></div>
+      </div>
+      <div class="d-none d-lg-block col border border-secondary">
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center ">Make Money With Us</a>
+        </div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Sell Products On Web Shopping</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Sell On Amazon Business</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Sell Apps On Amazon</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center">Host An Amazon Hub</a></div>
+
+      </div>
+      <div class="d-none d-lg-block col border border-secondary">
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center">Web Shopping Payment Products</a>
+        </div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Business Card</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center "> Shop With Points</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Reload Your Balance</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Currency Converter</a></div>
+      </div>
+      <div class="d-none d-lg-block col border border-secondary">
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center ">Let Us Help You
+         </a>
+        </div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Your Account</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Your Orders</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center "> Shipping Rates </a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Policies</a></div>
+
+      </div>
+      <div class="d-none d-lg-block col border border-secondary">
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-uppercase fw-bold text-center">Follow us on</a>
+        </div>
+        <div class="col"><a href="https://github.com/Kincaid-kroos/Kincaid-kroos" class="text-decoration-none text-dark text-center ">Facebook</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Instagram</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Twitter</a></div>
+        <div class="col"><a href="#" class="text-decoration-none text-dark text-center ">Youtube</a></div>
+        <div class="col"><a href="https://github.com/Kincaid-kroos/Kincaid-kroos" class="text-decoration-none text-dark text-center ">GitHub</a></div>
+      </div>
+
+    </div>
+
+    <div class="row bg-dark text-success">
+      <div class="col-6">
+        <span class="m-2" style="font-size: 18px;">Find us on: </span>
+        <a href="#"><i class="bi bi-meta pt-2" style="font-size: 1rem; color: green;"></i></a>
+        <a href="#"><i class="bi bi-instagram ps-3 pt-2" style="font-size: 1rem; color: green;"></i></a>
+        <a href="#"><i class="bi bi-twitter ps-3 pt-2" style="font-size: 1rem; color: green;"></i></a>
+        <a href="#"><i class="bi bi-youtube ps-3 pt-2" style="font-size: 1rem; color: green;"></i></a>
+      </div>
+      <div class="col-6">
+        &copy; Kincaid Software, made easy.
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- img fluid -->
